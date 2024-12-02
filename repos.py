@@ -54,7 +54,7 @@ def get_repo_info(username,token):
     top_10_topics = top_ten_strings(topics)
     top_10_langs_abs = sort_dict_by_value(languages)
     sum_langs = sum(list(languages.values()))
-    top_10_langs = {l: f"{round(top_10_langs_abs[l]*100/sum_langs,2)}%" for l in top_10_langs_abs}
+    top_10_langs = {l: round(top_10_langs_abs[l]*100/sum_langs,2) for l in top_10_langs_abs}
     return repocount, gained_stars, gained_forks, top_10_topics, top_10_langs
 
 
