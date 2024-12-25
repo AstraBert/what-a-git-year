@@ -85,4 +85,4 @@ def parse_contribution_details(contrib_dets):
             issues_repos.append(repo_name)
             for issue in repo["contributions"]["nodes"]:
                 issues+=1
-    return f"- 🚀 You created **{commits} commits** in {len(set(commits_repos))} personal repositories\n\n- ⤴️ You created **{prs} pull requests** in {len(set(pull_reqs_repos))} repositories\n\n- 🪲 You created **{issues} issues** in {len(set(issues_repos))} repositories\n\n"
+    return f"- 🚀 You created **{commits} commits** in {len(set(commits_repos))} personal repositories\n\n- 🔨 You created **{prs} pull requests** in {len(set(pull_reqs_repos))} repositories\n\n- 🪲 You created **{issues} issues** in {len(set(issues_repos))} repositories\n\n"

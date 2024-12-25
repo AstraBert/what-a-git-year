@@ -1,29 +1,3 @@
-# import pandas as pd
-# import plotly.express as px
-
-# def plot_to_html(df: pd.DataFrame, x: str, y: str, labels: dict, color_based_on: str, y_label: str = "", x_label: str = "", title: str = "", filepath: str = "plot") -> str:
-#     # Create a bar plot with a greyscale color theme
-#     fig = px.bar(
-#         df,
-#         x=x,
-#         y=y,
-#         title=title,
-#         labels=labels,
-#         color=color_based_on,
-#         color_continuous_scale=px.colors.sequential.gray_r
-#     )
-
-#     # Update layout for appearance
-#     fig.update_layout(
-#         xaxis_title=x_label,
-#         yaxis_title=y_label,  # Adding the y_label explicitly
-#         template="plotly_white",  # Light background for greyscale contrast
-#         title_x=0.5,  # Center the title
-#     )
-
-#     fig.write_image(f"{filepath}.png")
-#     return f"{filepath}.png"
-
 import pandas as pd
 import plotly.express as px
 
